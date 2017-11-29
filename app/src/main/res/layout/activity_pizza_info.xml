@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.jpauwels.orderpizza.PizzaInfo">
+
+    <TextView
+        android:id="@+id/lblType"
+        android:layout_width="147dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/pizzatype"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/txtSize"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radGroupType"
+        android:layout_width="204dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@+id/radRound"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radRound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:text="@string/round" />
+
+        <RadioButton
+            android:id="@+id/radSquare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:baselineAligned="false"
+            android:text="@string/square" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spnRoundSize"
+        android:layout_width="151dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/lstroundsize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtSize"
+        app:layout_constraintTop_toBottomOf="@+id/radGroupType" />
+
+    <TextView
+        android:id="@+id/txtSize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/size"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblType" />
+
+    <Spinner
+        android:id="@+id/spnSquareSize"
+        android:layout_width="151dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:entries="@array/lstsquaresize"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtSize"
+        app:layout_constraintTop_toBottomOf="@+id/radGroupType" />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="124dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkGreenPepper" />
+
+    <CheckBox
+        android:id="@+id/chkPepperoni"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/pepperoni"
+        app:layout_constraintStart_toStartOf="@+id/chkSausage"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/chkSausage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/sausage"
+        app:layout_constraintStart_toStartOf="@+id/chkMushroom"
+        app:layout_constraintTop_toBottomOf="@+id/chkPepperoni" />
+
+    <CheckBox
+        android:id="@+id/chkBacon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/bacon"
+        app:layout_constraintStart_toStartOf="@+id/chkGreenPepper"
+        app:layout_constraintTop_toBottomOf="@+id/chkOnion" />
+
+    <CheckBox
+        android:id="@+id/chkMushroom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/mushroom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkSausage" />
+
+    <CheckBox
+        android:id="@+id/chkOnion"
+        android:layout_width="70dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/onion"
+        app:layout_constraintStart_toStartOf="@+id/chkBacon"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/toppings"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSize" />
+
+    <CheckBox
+        android:id="@+id/chkGreenPepper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/greenpepper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chkBacon" />
+
+    <ImageView
+        android:id="@+id/imgPizza"
+        android:layout_width="237dp"
+        android:layout_height="145dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNext"
+        app:srcCompat="@drawable/pizza" />
+
+</android.support.constraint.ConstraintLayout>

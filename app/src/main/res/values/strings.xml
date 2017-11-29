@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Order Pizza</string>
+    <string name="lastname">Last Name</string>
+    <string name="firstname">First Name</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="zip">Zip Code</string>
+    <string name="streetaddress">Street Address</string>
+    <string name="phone">Phone Number</string>
+    <string name="header">Please enter your information to begin your order</string>
+    <string name="next">Next</string>
+    <string name="round">Round</string>
+    <string name="square">Square</string>
+    <string name="pizzatype">Select Pizza Type</string>
+    <string name="size">Select Size</string>
+    <string-array name="lstroundsize">
+        <item>8 Inch</item>
+        <item>10 Inch</item>
+        <item>12 Inch</item>
+        <item>14 Inch</item>
+    </string-array>
+    <string-array name="lstsquaresize">
+        <item>8 Inch</item>
+        <item>12 Inch</item>
+        <item>16 Inch</item>
+    </string-array>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="sausage">Sausage</string>
+    <string name="bacon">Bacon</string>
+    <string name="greenpepper">Green Pepper</string>
+    <string name="onion">Onion</string>
+    <string name="mushroom">Mushroom</string>
+    <string name="toppings">Select Toppings</string>
+</resources>

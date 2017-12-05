@@ -29,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //move on to next screen
                 if (checkData()) {
+                    //pass data in variables to next screen
                     Intent nextScreen = new Intent(MainActivity.this, PizzaInfo.class);
                     nextScreen.putExtra("FirstName", firstName.getText().toString());
                     nextScreen.putExtra("LastName", lastName.getText().toString());
@@ -47,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
             private boolean checkData() {
+        //perform checks to validate input
                 final EditText firstName = (EditText) findViewById(R.id.txtFirstName);
                 final EditText lastName = (EditText) findViewById(R.id.txtLastName);
                 final EditText address = (EditText) findViewById(R.id.txtAddress);

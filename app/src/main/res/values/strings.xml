@@ -14,15 +14,15 @@
     <string name="pizzatype">Select Pizza Type</string>
     <string name="size">Select Size</string>
     <string-array name="lstroundsize">
-        <item>8 Inch</item>
-        <item>10 Inch</item>
-        <item>12 Inch</item>
-        <item>14 Inch</item>
+        <item>8 Inch - $8.25</item>
+        <item>10 Inch - $10.00</item>
+        <item>12 Inch - $13.00</item>
+        <item>14 Inch - $16.00</item>
     </string-array>
     <string-array name="lstsquaresize">
-        <item>8 Inch</item>
-        <item>12 Inch</item>
-        <item>16 Inch</item>
+        <item>8 Inch - $8.25</item>
+        <item>12 Inch - $14.00</item>
+        <item>16 Inch - $17.00</item>
     </string-array>
     <string name="pepperoni">Pepperoni</string>
     <string name="sausage">Sausage</string>
@@ -30,5 +30,24 @@
     <string name="greenpepper">Green Pepper</string>
     <string name="onion">Onion</string>
     <string name="mushroom">Mushroom</string>
-    <string name="toppings">Select Toppings</string>
+    <string name="toppings">Select Toppings - Each topping is $.50 extra</string>
+    <string name="delivery">Do you want delivery?(Adds $5.00 to total)</string>
+    <string name="yesdelradio">Yes</string>
+    <string name="nodelradio">No</string>
+    <string name="paymethod">How would you like to pay?</string>
+    <string name="cashradio">Cash</string>
+    <string name="creditradio">Credit</string>
+    <string name="cashdesc">Please have cash ready at time of delivery or pickup.</string>
+    <string name="ccnum">Enter credit card number</string>
+    <string name="ccmon">Month</string>
+    <string name="ccyear">Year</string>
+    <string name="ccexpiration">Expiration:</string>
+    <string name="cccode">3 digit code on back: </string>
+    <string name="csc">CSC</string>
+    <string name="paytypeerror">Please choose a payment type.</string>
+    <string name="address">Address</string>
+    <string name="thankyou">Thank you for your order.</string>
+    <string name="summary">Order Summary</string>
+    <string name="name">Name</string>
+
 </resources>

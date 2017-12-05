@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".PizzaInfo"></activity>
+        <activity android:name=".PizzaInfo" />
+        <activity android:name=".Payment" />
+        <activity android:name=".Summary"></activity>
     </application>
 
 </manifest>

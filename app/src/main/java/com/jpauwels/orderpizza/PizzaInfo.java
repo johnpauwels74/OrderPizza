@@ -92,13 +92,13 @@ public class PizzaInfo extends AppCompatActivity {
                     }
                 }else if (square.isChecked())
                 {
-                    if (spnRoundSize.getSelectedItem().toString().equals("8 Inch - $8.25")){
+                    if (spnSquareSize.getSelectedItem().toString().equals("8 Inch - $8.25")){
                         totalcost = 8.25;
                     }
-                    else if (spnRoundSize.getSelectedItem().toString().equals("12 Inch - $14.00")){
+                    else if (spnSquareSize.getSelectedItem().toString().equals("12 Inch - $14.00")){
                         totalcost = 14.00;
                     }
-                    else if (spnRoundSize.getSelectedItem().toString().equals("16 Inch - $17.00")){
+                    else if (spnSquareSize.getSelectedItem().toString().equals("16 Inch - $17.00")){
                         totalcost = 17.00;
                     }
                 }
